@@ -124,7 +124,7 @@ function App() {
 				<div className="fnction">
 				<TextField
 					id="filled-basic"
-					label="Name"
+					label="Please Enter your Name"
 					variant="filled"
 					value={name}
 					onChange={(e) => setName(e.target.value)}
@@ -133,15 +133,15 @@ function App() {
 				</div>
 				<div className="fnction">
 				<CopyToClipboard text={me} style={{ marginBottom: "2rem" }}>
-					<Button variant="contained" color="primary" startIcon={<AssignmentIcon fontSize="large" />}>
-						Copy ID
-					</Button>
+					<Button variant="contained" value={me} color="primary" startIcon={<AssignmentIcon fontSize="large" />}/>
 				</CopyToClipboard>
 				</div>
 				<div className="fnction">
+					<label id ="roomID"></label>
+					<h3 id ="roomID" value={me}></h3>
 				<TextField
 					id="filled-basic"
-					label="ID to call"
+					label="Paste the Rood ID here"
 					variant="filled"
 					value={idToCall}
 					onChange={(e) => setIdToCall(e.target.value)}
