@@ -131,11 +131,7 @@ function App() {
 					style={{ marginBottom: "20px" }}
 				/>
 				</div>
-				<div className="fnction">
-				<CopyToClipboard text={me} style={{ marginBottom: "2rem" }}>
-					<Button variant="contained" value={me} color="primary" startIcon={<AssignmentIcon fontSize="large" />}/>
-				</CopyToClipboard>
-				</div>
+
 				<div className="fnction">
 					<label id ="roomID"></label>
 					<h3 id ="roomID" value={me}></h3>
