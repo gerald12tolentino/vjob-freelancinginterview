@@ -122,8 +122,13 @@ function App() {
 			<div className="myId">
 				<div className="MediaControl">
 				<div className="fnction">
-				<label id ="roomID"></label>
-					<h3 id ="roomID" value={me}></h3>
+				<TextField
+					disabled defaultValue="Disabled"
+					id="filled-basic"
+					label="Room ID"
+					variant="filled"
+					value={me}
+				/>
 					</div>
 				<div className="fnction">
 				<TextField
@@ -145,7 +150,7 @@ function App() {
 				<div className="fnction">
 				<TextField
 					id="filled-basic"
-					label="Paste the Rood ID here"
+					label="Paste the Room ID here"
 					variant="filled"
 					value={idToCall}
 					onChange={(e) => setIdToCall(e.target.value)}
