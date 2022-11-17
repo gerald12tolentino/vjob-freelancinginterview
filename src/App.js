@@ -122,6 +122,10 @@ function App() {
 			<div className="myId">
 				<div className="MediaControl">
 				<div className="fnction">
+				<label id ="roomID"></label>
+					<h3 id ="roomID" value={me}></h3>
+					</div>
+				<div className="fnction">
 				<TextField
 					id="filled-basic"
 					label="Please Enter your Name"
@@ -131,10 +135,14 @@ function App() {
 					style={{ marginBottom: "20px" }}
 				/>
 				</div>
-
 				<div className="fnction">
-					<label id ="roomID"></label>
-					<h3 id ="roomID" value={me}></h3>
+				<CopyToClipboard text={me} style={{ marginBottom: "2rem" }}>
+					<Button variant="contained" color="primary" startIcon={<AssignmentIcon fontSize="large" />}> 
+					Copy Room ID
+					</Button>
+				</CopyToClipboard>
+				</div>
+				<div className="fnction">
 				<TextField
 					id="filled-basic"
 					label="Paste the Rood ID here"
